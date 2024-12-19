@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "css.css">
+    <link rel = "icon" type = "image/icon type" href = "cloud.png"/>
+
+    <title>YunBooks | About</title>
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <div class = "menu" id = "menu">
+                <div class = "line"> </div>
+                <div class = "line"> </div>
+                <div class = "line"> </div>
+            </div>
+
+            <div class = "logo"> Yun<span>Books</span></div>
+            <ul class = "navLinks">
+                <li> <a href = "html.html" target = "_self"> Home </a> </li>
+                <li class = "dropdown">                         
+                    <a href = "products.html" target = "_self"> Categories </a>
+                    <div class = "dropdown_content">
+                        <a href = ""> Fiction </a>
+                        <a href = ""> Nonfiction </a>
+                    </div>                                  
+                </li>
+                <li> <a href = "about.html" target = "_self"> About </a> </li>
+            </ul>
+
+            <div class = "navCart">
+                <img class = "userIcon" id = "login" src = "user.png">
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- The Login Overlay -->
+    <div id = "loginOverlay" class = "login-overlay">
+        <div class = "overlay-content">
+            <span id = "loginClose" class = "login-close">&times;</span>
+            <div id = "loginForm" class = "form">
+                <h3> Login </h3>
+                <form>
+                    <div class = "input-group">
+                        <label for = "email"> Email </label>
+                        <input type = "email" id = "email" placeholder = "Enter your email" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "password"> Password </label>
+                        <input type = "password" id = "password" placeholder = "Enter your password" required>
+                    </div>
+
+                    <button class = "loginBtn" type = "submit"> Login </button>
+                    <p> Don't have an account? <span id = "goToSignUp"> Sign up here </span></p>
+                </form>
+            </div>
+            <div id = "signUpForm" class = "form">
+                <h3> Sign Up </h3>
+                <form>
+                    <div class = "input-group">
+                        <label for = "signup-email"> Email </label>
+                        <input type = "email" id = "signup-email" placeholder = "Enter your email address" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "signup-pass"> Password </label>
+                        <input type = "password" id = "signup-pass" placeholder="Create a password" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "signup-confirm"> Confirm Password </label>
+                        <input type = "password" id = "signup-confirm" placeholder = "Confirm Password" required>
+                    </div>
+
+                    <button type = "submit"> Sign Up </button>
+                    <p> Already have an accoount? <span id = "goToLogin"> Login here </span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class = "contents">
+         <section id = "abt">
+            <h3> Yun Books </h3>
+            <p>
+                AN independent publisher for your fictional and non fictional books.
+                Our name originated from the filipino word <i> iyon </i> which means <i> that </i> in english.
+                We offer a variety of genres, mainly for pesonal development and entertaining sories like romance, drama, and thriller.
+            </p>
+        </section>
+
+        <section id = "blog">
+            <h1> Our Blog </h1>
+            <div class = "blog_box">
+
+                <div class = "blog_card">
+                    <img src = "blog1.JPG">
+                    <div class = "blog_tag">
+                        <h2> Failed? Try again. </h2>
+                        <p>
+                            There's nothing to be afraid of with trying after failing a lot of times. As it is better to regret that
+                            you tried so hard than to regret that you've never tried at all. Remember that not it is not always you that
+                            is the problem, sometimes things aren't just meant for us. 
+                        </p>
+                        <div class = "blog_icon">
+                            <i class = "fa-solid fa-calendar-days"></i>
+                            <i class = "fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "blog_card">
+                    <img src = "blog2.jpg">
+                    <div class = "blog_tag">
+                        <h2> Does reading your child to sleep increases their intelligence? </h2>
+                        <p>
+                            Parents worries about their child's ability to learn. Most of them words harder than others to increase
+                            their child's intelligence through teaching them much more earlier. Although reading a child to sleep for others
+                            might be just for fun, others also take it as a training for their child to understand better.
+                        </p>
+                        <div class = "blog_icon">
+                            <i class = "fa-solid fa-calendar-days"></i>
+                            <i class = "fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "blog_card">
+                    <img src = "blog3.jpg">
+                    <div class = "blog_tag">
+                        <h2> Tips to read quickly </h2>
+                        <p>
+                            There are a lot of people who wants to start getting on their yearly goals of books to read but 
+                            afraid to do so because of how time consuming it is. Well, here's the thing, there's actually ways
+                            to read quickly and still understand what a book can offer to you.
+                        </p>
+                        <div class = "blog_icon">
+                            <i class = "fa-solid fa-calendar-days"></i>
+                            <i class = "fa-solid fa-heart"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class = "container"> <!-- footer navigation -->
+            <div class = "row">
+                <div class = "footer-col">
+                    <h4> get help </h4>
+                    <ul>
+                        <li><a href = ""> FAQ </a></li>
+                        <li><a href = "privacy notice.html"> privacy policy </a></li>
+                        <li><a href = ""> find a store </a></li>
+                        <li><a href = ""> payment </a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-col"> <!-- contact info -->
+                    <h4> contact info </h4>
+                    <ul>
+                        <li> +63 998 765 4321 </li>
+                        <li> +63 998 765 4321 </li>
+                        <li> yunbooks@gmail.com </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-col"> <!-- social media links -->
+                    <h4> follow us </h4>
+                    <div class = "social-links">
+                        <a href = "facebook.com"> f </a>
+                        <a href = "twitter.com"> t </a>
+                        <a href = "instagram.com"> i  </a>
+                    </div>
+                    <div class = "nwslttr_box">
+                        <div class = "email">
+                            <input type = "email" id = "myEmail" placeholder = "Enter email">
+                            <button type = "submit"> Subscribe </button>
+                        </div>   
+                    </div>  
+                </div>
+            </div>
+
+            <div class = "copyright">
+                <p>
+                    &#169; 2023-2024 YunBooks. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script src = "js.js"></script>

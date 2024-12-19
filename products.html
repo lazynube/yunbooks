@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "css.css">
+
+    <title>YunBooks | Shop</title>
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <div class = "menu" id = "menu">
+                <div class = "line"> </div>
+                <div class = "line"> </div>
+                <div class = "line"> </div>
+            </div>
+
+            <div class = "logo"> Yun<span>Books</span></div>
+            <ul class = "navLinks">
+                <li> <a href = "html.html" target = "_self"> Home </a> </li>
+                <li class = "dropdown">                         
+                    <a href = "products.html" target = "_self"> Categories </a>
+                    <div class = "dropdown_content">
+                        <a href = ""> Fiction </a>
+                        <a href = ""> Nonfiction </a>
+                    </div>                                  
+                </li>
+                <li> <a href = "about.html" target = "_self"> About </a> </li>
+            </ul>
+
+            <div class = "navCart">
+                <img class = "userIcon" id = "login" src = "user.png">
+                <p id = "cart"> <img id = "cartIcon" src = "cart.png"> <span class = "cartQuantity"> <sup> 0 </sup></span> </p>
+            </div>
+                                     
+        </nav>
+    </header>
+
+    <!-- The Login Overlay -->
+    <div id = "loginOverlay" class = "login-overlay">
+        <div class = "overlay-content">
+            <span id = "loginClose" class = "login-close">&times;</span>
+            <div id = "loginForm" class = "form">
+                <h3> Login </h3>
+                <form>
+                    <div class = "input-group">
+                        <label for = "email"> Email </label>
+                        <input type = "email" id = "email" placeholder = "Enter your email" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "password"> Password </label>
+                        <input type = "password" id = "password" placeholder = "Enter your password" required>
+                    </div>
+
+                    <button class = "loginBtn" type = "submit"> Login </button>
+                    <p> Don't have an account? <span id = "goToSignUp"> Sign up here </span></p>
+                </form>
+            </div>
+            <div id = "signUpForm" class = "form">
+                <h3> Sign Up </h3>
+                <form>
+                    <div class = "input-group">
+                        <label for = "signup-email"> Email </label>
+                        <input type = "email" id = "signup-email" placeholder = "Enter your email address" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "signup-pass"> Password </label>
+                        <input type = "password" id = "signup-pass" placeholder="Create a password" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "signup-confirm"> Confirm Password </label>
+                        <input type = "password" id = "signup-confirm" placeholder = "Confirm Password" required>
+                    </div>
+
+                    <button type = "submit"> Sign Up </button>
+                    <p> Already have an accoount? <span id = "goToLogin"> Login here </span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class = "cart-overlay" id = "cartOverlay">
+        <div class = "cart-container">
+            <span class = "close-cart" id = "closeCart"> &times; </span>
+            <h2> Shopping Cart </h2>
+            <ul id = "cartItems">
+
+            </ul>
+
+            <!-- <button class = "close-cart" id = "closeCart" > Close </button> -->
+            <div class = "total">
+                <strong> Total: ₱<span id = "totalAmount">0</span></strong>
+            </div>
+
+            <div class = "cartBtns">
+                <button class = "clearCart" id = "clearCart"> Clear Cart </button>
+                <button class = "checkout" id = "checkout"> Checkout </button>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <div class = "contents">
+        <section id = "books">
+            <h3> Shop Books </h3>
+            <p> Soak to an ocean of books that you love, will love, and will add to your collection soon!</p>
+        </section>
+        
+        <section id = "arrivals">
+            <h1> What's New? </h1>
+
+            <div class = "arrivals_box">
+        
+                <div class = "arrivals_card">
+                    <img src = "a certain someone.jpg">
+
+                    <p> A Certain Someone </p>
+                    <button src = "" class = "arrivalsBtn"> Learn More </button>
+            </div>
+    
+                <div class = "arrivals_card">
+                    <img src = "nick and charlie.jpg">
+
+                    <p> Nick and Charlie </p>
+                    <button src = "" class = "arrivalsBtn"> Learn More </button>
+            </div>
+    
+                <div class = "arrivals_card">
+                    <img src = "the girl on the train.jpg">
+
+                    <p> The Girl on the Train </p>
+                    <button src = "" class = "arrivalsBtn"> Learn More </button>
+            </div>
+    
+                <div class = "arrivals_card">
+                    <img src = "how to feed an abyss.jpg">
+
+                    <p> How to Feed an Abyss </p>
+                    <button src = "" class = "arrivalsBtn"> Learn More </button>
+                </div>
+    
+            </div>
+        </section>
+
+        <section id = "fiction">
+            <h1> Fiction </h1>
+
+            <div class = "books_box" id = "booksBox">
+                <div class = "books_card">
+                    <div class = "books_img">
+                        <img src = "the silent patient.jpg">
+                    </div>
+    
+                    <div class = "books_tag">
+                        <h2 id = "title"> The Silent Patient </h2>
+                        <p id = "author"> Alex Michaelides </p>
+                        <span class = "p">₱</span>
+                        <span id = "price">1175</span><br>
+                        <button class = "addBtn"> Add to cart </button>
+                    </div>
+                </div>  
+
+                <div class = "books_card">
+                    <div class = "books_img">
+                        <img src = "run, rebel.jpg">
+                    </div>
+    
+                    <div class = "books_tag">
+                        <h2 id = "title"> Run, Rebel </h2>
+                        <p id = "author"> Manjeet Mann </p>
+                        <span class = "p">₱</span>
+                        <span id = "price">700</span><br>
+                        <button class = "addBtn"> Add to cart </button>
+                    </div>  
+                </div>
+                
+                <div class = "books_card">
+                    <div class = "books_img">
+                        <img src = "mist.jpg">
+                    </div>
+    
+                    <div class = "books_tag">
+                        <h2 id = "title"> Mist </h2>
+                        <p id = "author"> Alex Michaelides </p>
+                        <span class = "p">₱</span>
+                        <span id = "price">800</span><br>
+                        <button class = "addBtn"> Add to cart </button>
+                    </div> 
+                </div>
+
+                <div class = "books_card">
+                    <div class = "books_img">
+                        <img src = "all the light we cannot see.jpg">
+                    </div>
+    
+                    <div class = "books_tag">
+                        <h2 id = "title"> All the Light We Cannot See </h2>
+                        <p id = "author"> Anthony Doer </p>
+                        <span class = "p">₱</span>
+                        <span id = "price">1150.50</span><br>
+                        <button class = "addBtn"> Add to cart </button>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <section id = "nonfiction">
+            <h1> Non Fiction </h1>
+
+            <div class = "books_box" id = booksBox>
+                <div class = "books_card">
+                    <div class = "books_img">
+                        <img src = "thinking, fast and slow.jpg">
+                    </div>
+    
+                    <div class = "books_tag">
+                        <h2 id = "title"> Thinking, Fast and Slow </h2>
+                        <p id = "author"> Daniel Kahneman </p>
+                        <span class = "p">₱</span>
+                        <span id = "price">900</span><br>
+                        <button class = "addBtn"> Add to cart </button>
+                    </div>
+                </div>
+                    
+                <div class = "books_card">
+                    <div class = "books_img">
+                        <img src = "tsaongaf.jpg">
+                    </div>
+    
+                    <div class = "books_tag">
+                        <h2 id = "title"> The Subtle Art of Not Giving a Fuck </h2>
+                        <p id = "author"> Mark Manson </p>
+                        <span class = "p">₱</span>
+                        <span id = "price">1800</span><br>
+                        <button class = "addBtn"> Add to cart </button>
+                    </div>
+                </div>
+
+                <div class = "books_card">
+                    <div class = "books_img">
+                        <img src = "a gentle reminder.jpg">
+                    </div>
+    
+                    <div class = "books_tag">
+                        <h2 id = "title"> A Gentle Reminder </h2>
+                        <p id = "author"> Bianca Sparacino </p>
+                        <span class = "p">₱</span>
+                        <span id = "price">400</span><br>
+                        <button class = "addBtn"> Add to cart </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class = "container"> <!-- footer navigation -->
+            <div class = "row">
+                <div class = "footer-col">
+                    <h4> get help </h4>
+                    <ul>
+                        <li><a href = ""> FAQ </a></li>
+                        <li><a href = "privacy notice.html"> privacy policy </a></li>
+                        <li><a href = ""> find a store </a></li>
+                        <li><a href = ""> payment </a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-col"> <!-- contact info -->
+                    <h4> contact info </h4>
+                    <ul>
+                        <li> +63 998 765 4321 </li>
+                        <li> +63 998 765 4321 </li>
+                        <li> yunbooks@gmail.com </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-col"> <!-- social media links -->
+                    <h4> follow us </h4>
+                    <div class = "social-links">
+                        <a href = "facebook.com"> f </a>
+                        <a href = "twitter.com"> t </a>
+                        <a href = "instagram.com"> i </i></a>
+                    </div>
+                    <div class = "nwslttr_box">
+                        <div class = "email">
+                            <input type = "email" id = "myEmail" placeholder = "Enter email">
+                            <button type = "submit"> Subscribe </button>
+                        </div>   
+                    </div>  
+                </div>
+
+            </div>
+
+            <div class = "copyright">
+                <p>
+                    &#169; 2023-2024 YunBooks. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src = "js.js"></script>
+</html>
