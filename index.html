@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "css.css">
+    <link rel = "icon" href = "cloud.png" type = "image/png">
+    
+    <title> YunBooks </title>
+</head>
+<body>
+    <header>
+        <nav class = "navbar">
+            <div class = "menu" id = "menu">
+                <div class = "line"> </div>
+                <div class = "line"> </div>
+                <div class = "line"> </div>
+            </div>
+
+            <div class = "logo"> Yun<span>Books</span></div>
+            <ul class = "navLinks">
+                <li> <a href = "html.html" target = "_self"> Home </a> </li>
+                <li class = "dropdown">                         
+                    <a href = "products.html" target = "_self"> Categories </a>
+                    <div class = "dropdown_content">
+                        <a href = ""> Fiction </a>
+                        <a href = ""> Nonfiction </a>
+                    </div>                                  
+                </li>
+                <li> <a href = "about.html" target = "_self"> About </a> </li>
+            </ul>
+
+            <div class = "navCart">
+                <img class = "userIcon" id = "login" src = "user.png">
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- The Login Overlay -->
+    <div id = "loginOverlay" class = "login-overlay">
+        <div class = "overlay-content">
+            <span id = "loginClose" class = "login-close">&times;</span>
+            <div id = "loginForm" class = "form">
+                <h3> Login </h3>
+                <form>
+                    <div class = "input-group">
+                        <label for = "email"> Email </label>
+                        <input type = "email" id = "email" placeholder = "Enter your email" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "password"> Password </label>
+                        <input type = "password" id = "password" placeholder = "Enter your password" required>
+                    </div>
+
+                    <button class = "loginBtn" type = "submit"> Login </button>
+                    <p> Don't have an account? <span id = "goToSignUp"> Sign up here </span></p>
+                </form>
+            </div>
+            <div id = "signUpForm" class = "form">
+                <h3> Sign Up </h3>
+                <form>
+                    <div class = "input-group">
+                        <label for = "signup-email"> Email </label>
+                        <input type = "email" id = "signup-email" placeholder = "Enter your email address" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "signup-pass"> Password </label>
+                        <input type = "password" id = "signup-pass" placeholder="Create a password" required>
+                    </div>
+
+                    <div class = "input-group">
+                        <label for = "signup-confirm"> Confirm Password </label>
+                        <input type = "password" id = "signup-confirm" placeholder = "Confirm Password" required>
+                    </div>
+
+                    <button type = "submit"> Sign Up </button>
+                    <p> Already have an accoount? <span id = "goToLogin"> Login here </span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class = "contents">
+        <section id = "home">
+            <h3> Happy reading </h3>
+            <p> Explore and get to know what you love in a place welcome for everyone. </p>
+            <button href = "products.html" class = "getBtn" target = "_self"> Get Yours Now </button>
+        </section>
+
+        <section id = "about">
+            <h1> About us </h1>
+            <p> 
+                YunBooks is an independent publisher for your fictional and non-fictional books.
+                Our name originated from the filipino word <i> iyon </i> which means <i> that </i> in english.
+                We offer a variety of genres, mainly for personal development and entertaining stories like romance, drama, and thriller.
+            </p>
+            <button href = "about.html" class = "learnBtn" target = "_self"> Learn More </button>
+        </section>
+
+        <section id = "services">
+            <div class = "services_box">
+                <div class = "services_card">
+                    <p> Fast Delivery </p>
+                </div>
+
+                <div class = "services_card">
+                    <p> 24/7 Services </p>
+                </div>
+
+                <div class = "services_card">
+                    <p> Best Deal </p>
+                </div>
+
+                <div class = "services_card">
+                    <p> Secure Payment </p>
+                </div>
+            </div>
+        </section>
+
+        <section id = "featured">
+            <h1> What's Popular? </h1>
+            <div class = "featured_box">
+                <div class = "featured_img">
+                    <img src = "tsaongaf.jpg">
+                </div>
+
+                <div class = "featured_img">
+                    <img src = "all the light we cannot see.jpg">
+                </div>
+
+                <div class = "featured_img">
+                    <img src = "atomic habits.jpg">
+                </div>
+
+                <div class = "featured_img">
+                    <img src = "if i had your face.jpg">
+                </div>
+            </div>
+        </section>
+
+        <section id = "reviews">
+            <h1> Comments and Reviews </h1>
+
+            <div class = "review_box">
+
+                <div class = "review_card">
+                    <i class = "fa-solid fa-quote-right"></i>
+                    <div class = "card_top">
+                        <img src = "icon1.jpg">
+                    </div>
+                    <div class = "card">
+                        <h2> Ae </h2>
+                        <p> 
+                            When I accidentally ordered five books here, I was worried about returning it since not every store
+                            is very accomodating of returning products. But well, I was surprised that they even helped me navigate on
+                            how I could return it to them properly.
+                        </p>
+                        <div class = "review_icon">
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "review_card">
+                    <i class = "fa-solid fa-quote-right"></i>
+                    <div class = "card_top">
+                        <img src = "icon2.jpg">
+                    </div>
+                    <div class = "card">
+                        <h2> Patrick </h2>
+                        <p> 
+                            I love the store, the seller are fun to talk with and not hard
+                            to get along so I was able to buy books wherever and whenever
+                            I want.
+                        </p>
+                        <div class = "review_icon">
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "review_card">
+                    <i class = "fa-solid fa-quote-right"></i>
+                    <div class = "card_top">
+                        <img src = "icon4.jpg">
+                    </div>
+                    <div class = "card">
+                        <h2> Mochi </h2>
+                        <p> 
+                            The books they published are all the best! All my favorite genres and authors are here so it's easier for me to navigate what to buy next.
+                        </p>
+                        <div class = "review_icon">
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star"></i>
+                            <i class = "fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "newsletter">
+            <h1> Sign up for our newsletter! </h1>
+            <p>
+                Subscribe to our free newsletter for the latest and newest updates, exclusive content, and other perks!
+            </p>
+        
+            <div class = "nwslttr_box">
+                <div class = "email">
+                    <input type = "email" name = "email" placeholder = "Enter email" required>
+                    <button type = "submit"> Subscribe </button>
+                </div>   
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class = "container"> <!-- footer navigation -->
+            <div class = "row">
+                <div class = "footer-col">
+                    <h4> get help </h4>
+                    <ul>
+                        <li><a href = ""> FAQ </a></li>
+                        <li><a href = "privacy notice.html"> privacy policy </a></li>
+                        <li><a href = ""> find a store </a></li>
+                        <li><a href = ""> payment </a></li>
+                    </ul>
+                </div>
+
+                <div class = "footer-col"> <!-- contact info -->
+                    <h4> contact info </h4>
+                    <ul>
+                        <li> +63 998 765 4321 </li>
+                        <li> +63 998 765 4321 </li>
+                        <li> yunbooks@gmail.com </li>
+                    </ul>
+                </div>
+
+                <div class = "footer-col"> <!-- social media links -->
+                    <h4> follow us </h4>
+                    <div class = "social-links">
+                        <a href = "facebook.com"> f </a>
+                        <a href = "twitter.com"> t </a>
+                        <a href = "instagram.com"> i </i></a>
+                    </div>  
+                </div>
+            </div>
+
+            <div class = "copyright">
+                <p>
+                    &#169; 2023-2024 YunBooks. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src = "js.js"></script>
+</html>
